@@ -1,0 +1,90 @@
+
+
+======= MATRIX MOVEMENTS DOCUMENTATION =======
+
+    Jaime Portillo (R) 2021
+
+==============================================
+
+-------------- CLASS Board_matrix ------------
+
+"""
+    We will use 'myBoard' for instances of Board_matrix() in the examples
+"""
+
+-   Board_matrix(size)
+    /* Crates object Board_matrix */
+    size --> Tuple of (i,j) coordinates
+
+-   print_board()
+    /* Prints the board */
+
+-   rotate_board(direction)
+    /* Rotates the matrix in an especified direction */
+    direction --> Takes two values: [ myBoard.CLOK|myBoard.ANTICLOCK ]
+
+-   transpose_matrix()
+    /* Transposes the matrix */
+
+-   grow_board(size, diagonal=0)
+    /* Adds rows and columns from the start of the main diagonal [0] or from the end of the main diagonal [1] */
+    size --> (rows, cols) How many rows/cols to add
+
+
+-------------- CLASS Point ----------------
+
+"""
+    We will use 'myPoint' for instances of Point() in the examples
+"""
+
+-   Point(parent)
+    /* Crates the object Point and asigns to a parent matrix */
+    parent --> Object Board_matrix that the point is in
+
+-   setPoint(i, j, value)
+    /* Sets the point in a position and asigns it a value */
+    i --> Row from 0
+    j --> Column from 0
+    value --> Value of the point
+
+-   getPoint()
+    /* Returns a tuple of de 'i' and 'j' coordinate */
+
+-   remove_point()
+    /* Removes the point from the board and */ 
+
+-   move(dir)
+    /* Move the point from its position the 'n' steps on dir tuple */
+    dir --> (i,j) Tuple with steps on each axis
+
+-   moveTo(dir)
+    /* Move to an specific coord in board */
+    dir --> (i,j) Tuple with coordinates on each axis
+
+-   __eq__
+    /* The comparation '=' with other point check if both have the same 'i' and 'j' coordinates and not necesarily the same value */
+
+
+---------------- CLASS Body ----------------
+
+"""
+    This class allows operations with a group of points, the points can be created and setted with a body method to set all the ponts 
+    at the same time, or the points could be allready created and setted on the board but want to group them
+"""
+
+-   __init__(parent, points)
+    /* Create the group object */
+    parent --> myBoard object
+    points --> List of the points to group
+
+-   setPoints(coords)
+    /* Set the position of the points of the body and its value */
+    coords --> List of lists with the 'i' and 'j' of each point and its value ((0,0,1), (1,0,1), (0,1,1))
+
+-   move(dir)
+    /* Move all the points at the same time 'n' steps */
+    dir --> List of steps on each axis
+
+-   moveTo(dir)
+    /* Move all the points to an specific point using the first pased point as reference */
+    dir --> Position to move fist point
