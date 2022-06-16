@@ -1,0 +1,25 @@
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7C40>
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7C28>
+Button.left
+h
+o
+l
+a
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7C10>
+Key.enter
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7BF8>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7BE0>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7C88>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7CB8>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7CD0>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7CE8>
+Button.left
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7D00>
+Key.enter
+<PIL.Image.Image image mode=RGB size=1366x768 at 0xC9D7D18>
+Button.left
