@@ -1,0 +1,7 @@
+192.168.1.1;Rooter
+192.168.1.35;Iphone jaime
+192.168.1.36;No name found
+192.168.1.38;AppleTV
+192.168.1.46;PORTI-PC
+192.168.1.47;PORTI
+192.168.1.64;No name found
