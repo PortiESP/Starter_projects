@@ -2,9 +2,14 @@ import os, sys, subprocess
 from bs4 import BeautifulSoup as soup
 
 
+# Get the IG profile report file, extract and execute the script passing the path, (replace '\' with '/')
+# Example: $ python3 <programName>.py "C:/Users/elp0r/Downloads/iguser_45465465"
+
+
+
 # ===============[ Functions ]===============
 class IGTools():
-	def __init__(self, path=sys.argv[0]):
+	def __init__(self, path=sys.argv[1]):
 		self.dataPath = path
 		self.files = self.getHTMLFiles()
 
@@ -18,6 +23,7 @@ class IGTools():
 
 	# Menu options
 	def parseData(self):
+		print(self.dataPath)
 		content = None
 
 		# Get followers
@@ -58,9 +64,11 @@ class IGTools():
 
 # ===============[ Main loop ]===============
 if __name__ == '__main__':
-	tool = IGTools("portii.rm_20220513")
+	tool = IGTools()
 	tool.parseData()
 	
+	print("Serving CLI Menu")
+
 	while 1:
 		os.system('cls')
 		print(" + Instagram tools:\n")
